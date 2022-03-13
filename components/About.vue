@@ -7,9 +7,11 @@
             <div class="col-span-1 flex justify-center items-center ml-8">
                 <div class="bg-white py-16 px-12 shadow">
                     <h2 class="text-lg font-semibold">Rongta Technology (Xiamen) Group Co.,Ltd.</h2>
-                    <p
-                        class="text-rongtatext text-sm mt-8 mb-6"
-                    >Rongta Technology (Xiamen) Group Co., Ltd. is a high-tech enterprise established in Jan 1st, 2009, specializing in R&D, manufacturing and marketing of pos printers, receipt printers, label scales, thermal transfer barcode printers, impact printers, printer mechanism, control boards and other POS peripherals.</p>
+                    <p class="text-rongtatext text-sm mt-8 mb-6">
+                        Rongta Technology (Xiamen) Group Co., Ltd. is a high-tech enterprise established in Jan 1st, 2009, specializing in R&D, manufacturing and marketing of pos printers, receipt printers, label scales, thermal transfer barcode printers, impact printers, printer mechanism, control boards and other POS peripherals.
+                        <br />
+                        <br />Computer City Technologies Ltd. is the authorized distributor for Rongta in Bangladesh
+                    </p>
 
                     <a
                         href="#"

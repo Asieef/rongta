@@ -16,7 +16,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/receipt-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:brightness-75"
+                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"
@@ -27,10 +27,10 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/mobile-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:brightness-75"
+                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
-                                    class="text-white font-bold uppercase p-2 text-lg tracking-wider"
+                                    class="text-white font-bold uppercase p-2 text-lg tracking-wider hover:brightness-100"
                                 >Mobile Printer</h2>
                             </div>
                         </a>
@@ -38,7 +38,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/lable-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:brightness-75"
+                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"
@@ -49,7 +49,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/cash-drawer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:brightness-75"
+                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"

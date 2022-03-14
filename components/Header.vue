@@ -21,10 +21,14 @@
                     </li>
 
                     <li class="inline-block px-3">
-                        <a
+                        <NuxtLink
+                            class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
+                            to="/product"
+                        >Products</NuxtLink>
+                        <!-- <a
                             href="#"
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >Products</a>
+                        >Products</a>-->
                     </li>
 
                     <li class="inline-block px-3">

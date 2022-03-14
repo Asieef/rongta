@@ -53,9 +53,9 @@
                         <li class="text-white uppercase py-2 text-xl font-semibold">Contact Us</li>
                         <li
                             class="text-sm text-gray-400 py-2"
-                        >No.1501 C1 Building, Wanda Plaza, No.3 Jinzhong Road, Huli, Xiamen, China</li>
-                        <li class="text-sm text-gray-400 py-2">Tel:+86 18950199296</li>
-                        <li class="text-sm text-gray-400 py-2">market-01@rongtatech.com</li>
+                        >75-76, B.S. Bhaban, 3rd Floor Laboratory Road Dhaka-1205, Bangladesh</li>
+                        <li class="text-sm text-gray-400 py-2">Tel:+880 2 9612629-30</li>
+                        <li class="text-sm text-gray-400 py-2">info AT rongta.com.bd</li>
                     </ul>
                 </div>
 

@@ -6,7 +6,9 @@
         >
             <!-- Newsletter Section -->
             <div class="mt-8 px-8">
-                <div class="grid grid-flow-col grid-cols-10 gap-4">
+                <div
+                    class="grid lg:grid-flow-col lg:grid-cols-10 grid-cols-1 gap-4 justify-items-center"
+                >
                     <div class="flex gap-4 col-span-4 items-center">
                         <div>
                             <img src="/mail.png" class="w-16" />
@@ -28,7 +30,7 @@
                             <input
                                 type="text"
                                 value="Enter your email address"
-                                class="w-80 h-12 px-4"
+                                class="lg:w-80 w-64 h-12 px-4"
                             />
                         </div>
                         <div class="bg-white h-12 flex items-center px-2">
@@ -47,7 +49,7 @@
 
             <!-- Links Section -->
 
-            <div class="grid grid-flow-col grid-cols-4 gap-4 justify-items-center px-8">
+            <div class="grid lg:grid-flow-col lg:grid-cols-4 gap-4 justify-items-center px-8">
                 <div class="col-span-1">
                     <ul>
                         <li class="text-white uppercase py-2 text-xl font-semibold">Contact Us</li>
@@ -59,7 +61,7 @@
                     </ul>
                 </div>
 
-                <div class="col-span-1">
+                <div class="col-span-1 lg:block hidden">
                     <ul>
                         <li
                             class="text-white uppercase py-2 text-xl font-semibold"
@@ -71,7 +73,7 @@
                     </ul>
                 </div>
 
-                <div class="col-span-1">
+                <div class="col-span-1 lg:block hidden">
                     <ul>
                         <li class="text-white uppercase py-2 text-xl font-semibold">New Products</li>
                         <li class="text-sm text-gray-400 py-2">RP327-UP</li>
@@ -80,7 +82,7 @@
                     </ul>
                 </div>
 
-                <div class="col-span-1">
+                <div class="col-span-1 lg:block hidden">
                     <ul>
                         <li class="text-white uppercase py-2 text-xl font-semibold">Categories</li>
                         <li class="text-sm text-gray-400 py-2">Mobile Printer</li>

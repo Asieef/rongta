@@ -4,19 +4,23 @@
             style="background-image: url('/category-bg.jpg')"
             class="h-[680px] bg-cover bg-no-repeat bg-top bg-fixed"
         >
-            <div class="grid grid-flow-row py-16 px-8">
+            <div class="grid grid-flow-row lg:py-16 px-8 py-8">
                 <div class="flex flex-col items-center">
-                    <h2 class="text-3xl font-bold uppercase tracking-wider">Product Category</h2>
+                    <h2
+                        class="lg:text-3xl text-xl font-bold uppercase tracking-wider"
+                    >Product Category</h2>
 
                     <img src="/bt-i.png" class="mt-4" />
                 </div>
 
                 <div>
-                    <div class="grid grid-flow-col grid-cols-4 gap-4 mt-16">
+                    <div
+                        class="grid lg:grid-flow-col lg:grid-cols-4 grid-cols-2 gap-4 lg:mt-16 mt-6"
+                    >
                         <a href="#">
                             <div
                                 style="background-image: url('/receipt-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
+                                class="col-span-1 lg:h-[400px] h-64 bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"
@@ -27,7 +31,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/mobile-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
+                                class="col-span-1 lg:h-[400px] h-64 bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider hover:brightness-100"
@@ -38,7 +42,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/lable-printer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
+                                class="col-span-1 lg:h-[400px] h-64 bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"
@@ -49,7 +53,7 @@
                         <a href="#">
                             <div
                                 style="background-image: url('/cash-drawer.jpg')"
-                                class="col-span-1 h-[400px] bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
+                                class="col-span-1 lg:h-[400px] h-64 bg-cover bg-no-repeat bg-center hover:grayscale-0 grayscale"
                             >
                                 <h2
                                     class="text-white font-bold uppercase p-2 text-lg tracking-wider"

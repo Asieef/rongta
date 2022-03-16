@@ -2,16 +2,18 @@
     <div>
         <div class="grid grid-cols-12 shadow-md h-24 px-8 relative">
             <div class="col-span-4 flex items-center justify-start">
-                <img src="/logo.png" class="w-20" />
+                <NuxtLink to="/">
+                    <img src="/logo.png" class="w-20" />
+                </NuxtLink>
             </div>
 
             <div class="col-span-8 flex items-center justify-end">
                 <ul class="uppercase text-[#333] font-bold">
                     <li class="inline-block px-3">
-                        <a
-                            href="#"
+                        <NuxtLink
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >Home</a>
+                            to="/"
+                        >Home</NuxtLink>
                     </li>
                     <li class="inline-block px-3">
                         <a

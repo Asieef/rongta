@@ -12,10 +12,10 @@
                 v-for="product in products"
                 :key="product.slug"
             >
-                <router-link :to="`/product/${product.slug}`">
+                <nuxt-link :to="`/product/${product.slug}`">
                     <img :src="product.thumbnail" alt="Casing" style="width:250px" />
                     <p class="text-rongtatext text-sm font-semibold px-8 py-2">{{ product.name }}</p>
-                </router-link>
+                </nuxt-link>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
             style="background-image: url('/category-bg.jpg')"
             class="h-[680px] bg-cover bg-no-repeat bg-top bg-fixed"
         >
-            <div class="grid grid-flow-row lg:py-16 px-8 py-8">
+            <div class="grid grid-flow-row lg:py-16 px-8 py-8 container mx-auto">
                 <div class="flex flex-col items-center">
                     <h2
                         class="lg:text-3xl text-xl font-bold uppercase tracking-wider"

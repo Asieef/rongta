@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="grid grid-cols-12 shadow-md h-24 px-8 relative">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-12 h-24 px-8 relative">
             <div class="col-span-4 flex items-center justify-start">
                 <NuxtLink to="/">
                     <img src="/logo.png" class="w-20" />
@@ -16,10 +16,10 @@
                         >Home</NuxtLink>
                     </li>
                     <li class="inline-block px-3">
-                        <a
-                            href="#"
+                        <NuxtLink
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >About Us</a>
+                            to="/about"
+                        >About Us</NuxtLink>
                     </li>
 
                     <li class="inline-block px-3">
@@ -27,30 +27,26 @@
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
                             to="/product"
                         >Products</NuxtLink>
-                        <!-- <a
-                            href="#"
-                            class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >Products</a>-->
                     </li>
 
                     <li class="inline-block px-3">
-                        <a
-                            href="#"
+                        <NuxtLink
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >Solution</a>
+                            to="/solution"
+                        >Solution</NuxtLink>
                     </li>
 
                     <li class="inline-block px-3">
-                        <a
-                            href="#"
+                        <NuxtLink
                             class="py-2 hover:text-rongta hover:border-b-2 hover:border-rongta"
-                        >Contact Us</a>
+                            to="/contact"
+                        >Contact Us</NuxtLink>
                     </li>
 
                     <li class="inline-block px-3" @click="toggleSearch">
-                        <a href="#" class="hover:text-rongta hover:border-b-2 hover:border-rongta">
+                        <NuxtLink to>
                             <img src="/search.svg" class="w-4" />
-                        </a>
+                        </NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -64,24 +60,27 @@
                 leave-to-class="transform opacity-0 scale-95"
             >
                 <div
-                    class="w-[240px] grid grid-flow-col grid-cols-8 gap-1 absolute bottom-2 right-10"
+                    class="grid grid-flow-col grid-cols-8 absolute bottom-1 right-10 gap-1"
                     v-if="showSearch"
                 >
-                    <div class="col-span-6 border-0 bg-white text-rongtatext">
-                        <input type="text" class="border border-slate-400" />
+                    <div class="col-span-7">
+                        <form class="inline" @submit.prevent="$nuxt.$emit('customSearch', query)">
+                            <input
+                                class="border px-2 rounded"
+                                type="text"
+                                placeholder="Search.."
+                                v-model="query"
+                            />
+                            <button type="submit" class="bg-rongta p-1 rounded">
+                                <img src="/search.svg" class="h-4" />
+                            </button>
+                        </form>
                     </div>
 
-                    <div
-                        class="col-span-1 flex justify-center items-center bg-rongta hover:bg-gray-200"
-                    >
-                        <img src="/search.svg" class="w-4" />
-                    </div>
-
-                    <div
-                        class="col-span-1 flex justify-center items-center bg-rongta hover:bg-gray-200 cursor-pointer"
-                        @click="toggleSearch"
-                    >
-                        <img src="/close.svg" class="w-2" />
+                    <div class="col-span-1">
+                        <button class="bg-rongta p-1 rounded" @click="toggleSearch">
+                            <img src="/close.svg" class="h-4" />
+                        </button>
                     </div>
                 </div>
             </transition>
@@ -91,9 +90,12 @@
 
 <script>
 export default {
+    emits: [],
     data() {
         return {
-            showSearch: false
+            showSearch: false,
+            query: "",
+            data: [],
         }
     },
 
@@ -104,3 +106,8 @@ export default {
     }
 }
 </script>
+
+
+
+
+

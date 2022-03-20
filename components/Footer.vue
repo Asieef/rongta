@@ -5,10 +5,8 @@
             class="h-[480px] bg-cover bg-no-repeat bg-center bg-fixed grid grid-flow-row"
         >
             <!-- Newsletter Section -->
-            <div class="mt-8 px-8">
-                <div
-                    class="grid lg:grid-flow-col lg:grid-cols-10 grid-cols-1 gap-4 justify-items-center"
-                >
+            <div class="mt-8 px-8 container mx-auto">
+                <div class="grid lg:grid-flow-col lg:grid-cols-10 grid-cols-1 gap-4">
                     <div class="flex gap-4 col-span-4 items-center">
                         <div>
                             <img src="/mail.png" class="w-16" />
@@ -21,11 +19,15 @@
                         </div>
                     </div>
 
-                    <div class="col-span-2 flex justify-end items-center">
-                        <img src="/facebook.png" class="w-8" />
+                    <div
+                        class="col-span-2 flex lg:justify-end items-center justify-center flex-wrap"
+                    >
+                        <NuxtLink to="https://www.facebook.com/comcity.bd">
+                            <img src="/facebook.png" class="w-8" />
+                        </NuxtLink>
                     </div>
 
-                    <div class="col-span-4 flex justify-center items-center">
+                    <div class="col-span-4 flex items-center">
                         <div>
                             <input
                                 type="text"
@@ -34,22 +36,70 @@
                             />
                         </div>
                         <div class="bg-white h-12 flex items-center px-2">
-                            <div>
-                                <a
-                                    href="#"
+                            <div @click="openAlert">
+                                <NuxtLink
                                     class="text-white bg-rongta px-8 py-2 uppercase text-sm hover:bg-rongtatext"
-                                >Submit</a>
+                                    to
+                                >Submit</NuxtLink>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Alert Section -->
+
+            <div
+                id="alert-1"
+                class="flex p-4 mb-4 bg-blue-100 rounded-lg dark:bg-blue-200"
+                role="alert"
+                v-if="showAlert"
+            >
+                <svg
+                    class="flex-shrink-0 w-5 h-5 text-blue-700 dark:text-blue-800"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                        clip-rule="evenodd"
+                    />
+                </svg>
+                <div
+                    class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800"
+                >Your Email Address has been submitted</div>
+                <button
+                    @click="openAlert"
+                    type="button"
+                    class="ml-auto -mx-1.5 -my-1.5 bg-blue-100 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex h-8 w-8 dark:bg-blue-200 dark:text-blue-600 dark:hover:bg-blue-300"
+                    data-collapse-toggle="alert-1"
+                    aria-label="Close"
+                >
+                    <span class="sr-only">Close</span>
+                    <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                        />
+                    </svg>
+                </button>
+            </div>
+
             <div class="border-t border-gray-600"></div>
 
             <!-- Links Section -->
 
-            <div class="grid lg:grid-flow-col lg:grid-cols-4 gap-4 justify-items-center px-8">
+            <div
+                class="grid lg:grid-flow-col lg:grid-cols-4 gap-4 justify-items-center px-8 container mx-auto"
+            >
                 <div class="col-span-1">
                     <ul>
                         <li class="text-white uppercase py-2 text-xl font-semibold">Contact Us</li>
@@ -96,9 +146,26 @@
             <div class="border-b border-gray-600"></div>
 
             <!-- Copyright Section -->
-            <div class="px-8 flex items-center">
+            <div class="px-8 flex items-center container mx-auto">
                 <p class="text-sm text-gray-400">Copyright © 2022 Rongta Bangladesh</p>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            showAlert: false
+        }
+    },
+
+    methods: {
+        openAlert() {
+            this.showAlert = !this.showAlert
+        }
+    }
+}
+
+</script>

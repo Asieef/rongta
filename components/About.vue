@@ -13,10 +13,10 @@
                         <br />Computer City Technologies Ltd. is the authorized distributor for Rongta in Bangladesh
                     </p>
 
-                    <a
-                        href="#"
+                    <NuxtLink
                         class="text-white bg-rongta px-8 py-2 uppercase text-sm hover:bg-rongtatext"
-                    >Read More</a>
+                        to="/about"
+                    >Read More</NuxtLink>
                 </div>
             </div>
 

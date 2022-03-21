@@ -27,24 +27,27 @@
                 leave-to-class="transform opacity-0 scale-95"
             >
                 <div
-                    class="w-[180px] grid grid-flow-col grid-cols-8 gap-1 absolute bottom-0 right-8"
+                    class="grid grid-flow-col grid-cols-8 absolute -bottom-4 right-6 gap-1"
                     v-if="showSearch"
                 >
-                    <div class="col-span-6 border-0 bg-white text-rongtatext">
-                        <input type="text" class="border border-slate-400" />
+                    <div class="col-span-7">
+                        <form class="inline" @submit.prevent="$nuxt.$emit('customSearch', query)">
+                            <input
+                                class="border px-2 rounded"
+                                type="text"
+                                placeholder="Search.."
+                                v-model="query"
+                            />
+                            <button type="submit" class="bg-rongta p-1 rounded">
+                                <img src="/search.svg" class="h-4" />
+                            </button>
+                        </form>
                     </div>
 
-                    <div
-                        class="col-span-1 flex justify-center items-center bg-rongta hover:bg-gray-200"
-                    >
-                        <img src="/search.svg" class="w-4" />
-                    </div>
-
-                    <div
-                        class="col-span-1 flex justify-center items-center bg-rongta hover:bg-gray-200 cursor-pointer"
-                        @click="toggleSearch"
-                    >
-                        <img src="/close.svg" class="w-2" />
+                    <div class="col-span-1">
+                        <button class="bg-rongta p-1 rounded" @click="toggleSearch">
+                            <img src="/close.svg" class="h-4" />
+                        </button>
                     </div>
                 </div>
             </transition>
@@ -66,13 +69,13 @@
                             <NuxtLink class="hover:text-rongta" to="/about">About Us</NuxtLink>
                         </li>
                         <li class="px-2 py-2 border-b block text-sm font-bold border-slate-100">
-                            <NuxtLink class="hover:text-rongta" to="/">Products</NuxtLink>
+                            <NuxtLink class="hover:text-rongta" to="/product">Products</NuxtLink>
                         </li>
                         <li class="px-2 py-2 border-b block text-sm font-bold border-slate-100">
-                            <NuxtLink class="hover:text-rongta" to="/">Solution</NuxtLink>
+                            <NuxtLink class="hover:text-rongta" to="/solution">Solution</NuxtLink>
                         </li>
                         <li class="px-2 py-2 block text-sm font-bold">
-                            <NuxtLink class="hover:text-rongta" to="/">Contact Us</NuxtLink>
+                            <NuxtLink class="hover:text-rongta" to="/contact">Contact Us</NuxtLink>
                         </li>
                     </ul>
                 </div>

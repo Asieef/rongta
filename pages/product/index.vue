@@ -27,7 +27,7 @@ export default {
         return {
             products: [],
             category: "thermal-printer",
-            cat_id: [57],
+            cat_id: [57, 9, 56],
         };
     },
 

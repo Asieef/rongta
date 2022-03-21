@@ -27,7 +27,7 @@
                         </NuxtLink>
                     </div>
 
-                    <div class="col-span-4 flex items-center">
+                    <div class="col-span-4 lg:flex items-center">
                         <div>
                             <input
                                 type="text"
@@ -35,7 +35,7 @@
                                 class="lg:w-80 w-64 h-12 px-4"
                             />
                         </div>
-                        <div class="bg-white h-12 flex items-center px-2">
+                        <div class="lg:bg-white h-12 flex items-center justify-start">
                             <div @click="openAlert">
                                 <NuxtLink
                                     class="text-white bg-rongta px-8 py-2 uppercase text-sm hover:bg-rongtatext"

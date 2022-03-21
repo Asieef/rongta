@@ -9,7 +9,7 @@
         </div>
 
         <div class="container mx-auto">
-            <div class="grid grid-flow-col grid-cols-2 gap-6 p-16">
+            <div class="grid lg:grid-flow-col lg:grid-cols-2 grid-cols-1 gap-6 p-16">
                 <div class="col-span-1 border border-gray-200">
                     <img :src="product.photo" :alt="product.name" style="width: 100%" />
                 </div>

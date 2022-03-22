@@ -121,15 +121,15 @@
                             <li class="text-sm text-gray-400 py-2">Privacy Policy</li>
                         </NuxtLink>
 
-                        <NuxtLink to="https://www.rongtatech.com/category/downloads/3">
+                        <a href="https://www.rongtatech.com/category/downloads/3">
                             <li class="text-sm text-gray-400 py-2">User Manual</li>
-                        </NuxtLink>
+                        </a>
 
-                        <NuxtLink to="https://www.rongtatech.com/category/downloads/1">
+                        <a href="https://www.rongtatech.com/category/downloads/1">
                             <li class="text-sm text-gray-400 py-2">Driver Download</li>
-                        </NuxtLink>
+                        </a>
 
-                        <NuxtLink to>
+                        <NuxtLink to="/">
                             <li class="text-sm text-gray-400 py-2">Faq</li>
                         </NuxtLink>
                     </ul>
@@ -147,10 +147,18 @@
                 <div class="col-span-1 lg:block hidden">
                     <ul>
                         <li class="text-white uppercase py-2 text-xl font-semibold">Categories</li>
-                        <li class="text-sm text-gray-400 py-2">Mobile Printer</li>
-                        <li class="text-sm text-gray-400 py-2">Label Printer</li>
-                        <li class="text-sm text-gray-400 py-2">Receipt Printer</li>
-                        <li class="text-sm text-gray-400 py-2">Thermal Printer</li>
+                        <NuxtLink to="/product">
+                            <li class="text-sm text-gray-400 py-2">Mobile Printer</li>
+                        </NuxtLink>
+                        <NuxtLink to="/product">
+                            <li class="text-sm text-gray-400 py-2">Label Printer</li>
+                        </NuxtLink>
+                        <NuxtLink to="/product">
+                            <li class="text-sm text-gray-400 py-2">Receipt Printer</li>
+                        </NuxtLink>
+                        <NuxtLink to="/product">
+                            <li class="text-sm text-gray-400 py-2">Thermal Printer</li>
+                        </NuxtLink>
                     </ul>
                 </div>
             </div>

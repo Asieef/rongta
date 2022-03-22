@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="bg-gray-800 text-white font-semibold uppercase flex px-4 py-4">
+        <div class="bg-gray-800 text-white font-semibold uppercase flex justify-center px-4 py-4">
             <div class="px-8">
                 <button
                     @click="selectTab(1)"
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="px-8">
+        <div class="px-8 container mx-auto">
             <div v-if="currentTab == 1" class="tabpanel">
                 <div class="px-10 py-6" v-html="product.details"></div>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container mx-auto">
         <h3 class="px-6 font-semibold uppercase mt-8">Search Result For "{{ query }}"</h3>
 
         <div class="grid lg:grid-cols-4 grid-cols-1 gap-6 px-6 py-12" v-if="products != null">
@@ -40,7 +40,7 @@ export default {
         getData(newSlug) {
             this.query = newSlug;
             this.$axios
-                .get(`https://admindash.comcitybd.com/api/search/${this.query}`)
+                .get(`https://admindash.comcitybd.com/api/customsearch/Rongta/${this.query}`)
                 .then((response) => {
                     console.log(response.data);
                     this.products = response.data.data;

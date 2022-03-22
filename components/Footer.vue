@@ -38,7 +38,7 @@
                         <div class="lg:bg-white h-12 flex items-center justify-start">
                             <div @click="openAlert">
                                 <NuxtLink
-                                    class="text-white bg-rongta px-8 py-2 uppercase text-sm hover:bg-rongtatext"
+                                    class="text-white bg-rongta px-8 py-2 lg:mr-2 uppercase text-sm hover:bg-rongtatext"
                                     to
                                 >Submit</NuxtLink>
                             </div>
@@ -116,10 +116,22 @@
                         <li
                             class="text-white uppercase py-2 text-xl font-semibold"
                         >Service & Support</li>
-                        <li class="text-sm text-gray-400 py-2">Privacy Policy</li>
-                        <li class="text-sm text-gray-400 py-2">User Manual</li>
-                        <li class="text-sm text-gray-400 py-2">Driver Download</li>
-                        <li class="text-sm text-gray-400 py-2">FAQ</li>
+
+                        <NuxtLink to="/privacy">
+                            <li class="text-sm text-gray-400 py-2">Privacy Policy</li>
+                        </NuxtLink>
+
+                        <NuxtLink to="https://www.rongtatech.com/category/downloads/3">
+                            <li class="text-sm text-gray-400 py-2">User Manual</li>
+                        </NuxtLink>
+
+                        <NuxtLink to="https://www.rongtatech.com/category/downloads/1">
+                            <li class="text-sm text-gray-400 py-2">Driver Download</li>
+                        </NuxtLink>
+
+                        <NuxtLink to>
+                            <li class="text-sm text-gray-400 py-2">Faq</li>
+                        </NuxtLink>
                     </ul>
                 </div>
 

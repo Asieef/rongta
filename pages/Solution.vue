@@ -8,137 +8,61 @@
 
         <div class="px-12">
             <section class="text-gray-600 body-font">
-                <div class="container px-5 py-8 mx-auto flex flex-wrap">
-                    <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col">
+                        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                            <div class="w-24 h-full bg-indigo-500"></div>
                         </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-rongta text-white relative z-10 title-font font-medium text-sm"
-                        >1</div>
-                        <div
-                            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
-                        >
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-gray-700 rounded-full inline-flex items-center justify-center"
-                            >
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    class="w-12 h-12"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2
-                                    class="font-medium title-font text-gray-900 mb-1 text-xl"
-                                >Retail Solution</h2>
-                            </div>
+                        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                            <h1
+                                class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"
+                            >Solution Secnarios with Rongta Products</h1>
+                            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+                                With Rongta products, you will get different types of solution for your business.
+                                Rongta offers product lines which are fit for your logistics, point of sales,
+                                inventory management and others
+                            </p>
                         </div>
                     </div>
-                    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                            <div class="rounded-lg h-64 overflow-hidden">
+                                <img
+                                    alt="content"
+                                    class="object-cover object-center h-full w-full"
+                                    src="/catering.jpg"
+                                />
+                            </div>
+                            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Catering</h2>
+                            <p
+                                class="text-base leading-relaxed mt-2"
+                            >Food is the paramount necessity of people. Chinese catering industry has experienced more than 30 years of development and market competition and still keep growing fast. Nowadays, catering industry has entered a new stage of investment entities diversification.</p>
                         </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-rongta text-white relative z-10 title-font font-medium text-sm"
-                        >2</div>
-                        <div
-                            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
-                        >
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-gray-700 rounded-full inline-flex items-center justify-center"
-                            >
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    class="w-12 h-12"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
+                        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                            <div class="rounded-lg h-64 overflow-hidden">
+                                <img
+                                    alt="content"
+                                    class="object-cover object-center h-full w-full"
+                                    src="/logistics.jpg"
+                                />
                             </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2
-                                    class="font-medium title-font text-gray-900 mb-1 text-xl"
-                                >Logistics Solution</h2>
-                            </div>
+                            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Logistics</h2>
+                            <p
+                                class="text-base leading-relaxed mt-2"
+                            >In recent years, with the deepening of global and regional economic integration, and the widespread use of information technology</p>
                         </div>
-                    </div>
-                    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                        </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-rongta text-white relative z-10 title-font font-medium text-sm"
-                        >3</div>
-                        <div
-                            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
-                        >
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-gray-700 rounded-full inline-flex items-center justify-center"
-                            >
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    class="w-12 h-12"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
+                        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                            <div class="rounded-lg h-64 overflow-hidden">
+                                <img
+                                    alt="content"
+                                    class="object-cover object-center h-full w-full"
+                                    src="/retail.jpg"
+                                />
                             </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2
-                                    class="font-medium title-font text-gray-900 mb-1 text-xl"
-                                >Medical Solution</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                        </div>
-                        <div
-                            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-rongta text-white relative z-10 title-font font-medium text-sm"
-                        >4</div>
-                        <div
-                            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
-                        >
-                            <div
-                                class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-gray-700 rounded-full inline-flex items-center justify-center"
-                            >
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    class="w-12 h-12"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                <h2
-                                    class="font-medium title-font text-gray-900 mb-1 text-xl"
-                                >Point of Sales Solution</h2>
-                            </div>
+                            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Retail</h2>
+                            <p
+                                class="text-base leading-relaxed mt-2"
+                            >The global retail industry thrives as economic, technological and social trends evolve and change. Driven by science and technology,the new intelligent retail mode has gradually become popular. The new retail mode, which based on customization, intelligence and cooperation</p>
                         </div>
                     </div>
                 </div>

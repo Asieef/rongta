@@ -38,9 +38,11 @@
                                 placeholder="Search.."
                                 v-model="query"
                             />
-                            <button type="submit" class="bg-rongta p-1 rounded">
-                                <img src="/search.svg" class="h-4" />
-                            </button>
+                            <span>
+                                <button type="submit" class="bg-rongta p-1 rounded">
+                                    <img src="/search.svg" class="h-4" />
+                                </button>
+                            </span>
                         </form>
                     </div>
 

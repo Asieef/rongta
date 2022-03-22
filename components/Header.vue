@@ -63,7 +63,7 @@
                     class="grid grid-flow-col grid-cols-8 absolute bottom-1 right-10 gap-1"
                     v-if="showSearch"
                 >
-                    <div class="col-span-7">
+                    <div class="col-span-6">
                         <form class="inline" @submit.prevent="$nuxt.$emit('customSearch', query)">
                             <input
                                 class="border px-2 rounded"
@@ -71,9 +71,11 @@
                                 placeholder="Search.."
                                 v-model="query"
                             />
-                            <button type="submit" class="bg-rongta p-1 rounded">
-                                <img src="/search.svg" class="h-4" />
-                            </button>
+                            <span>
+                                <button type="submit" class="bg-rongta p-1 rounded">
+                                    <img src="/search.svg" class="h-4" />
+                                </button>
+                            </span>
                         </form>
                     </div>
 

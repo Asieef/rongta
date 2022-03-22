@@ -4,10 +4,6 @@
             style="background-image: url('/category-bg.jpg')"
             class="h-[680px] bg-cover bg-no-repeat bg-top bg-fixed"
         >
-            <div class="h-1 bg-gray-200 rounded overflow-hidden">
-                <div class="w-24 h-full bg-indigo-500"></div>
-            </div>
-
             <div class="grid grid-flow-row lg:py-16 px-8 py-8 container mx-auto">
                 <div class="flex flex-col items-center">
                     <h2

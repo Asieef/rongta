@@ -1,0 +1,48 @@
+<template>
+    <div class="container mx-auto">
+        <div class="flex flex-col items-center mt-8">
+            <h2 class="text-3xl font-bold uppercase tracking-wider">Faq</h2>
+
+            <img src="/bt-i.png" class="mt-4" />
+        </div>
+
+        <div class="px-12 mt-8">
+            <h2
+                class="font-semibold text-lg text-rongtatext py-4 cursor-pointer"
+                @click="toggleFaq"
+            >Who is authorized distributor of rongta in Bangladesh?</h2>
+
+            <transition
+                enter-active-class="transition ease-out duration-300"
+                enter-class="transform opacity-0 scale-95"
+                enter-to-class="transform opacity-100 scale-100"
+                leave-active-class="transition ease-in duration-75"
+                leave-class="transform opacity-100 scale-100"
+                leave-to-class="transform opacity-0 scale-95"
+            >
+                <h2
+                    class="font-semibold text-gray-700 py-4"
+                    v-if="showFaq"
+                >Computer City Technologies Limited is the authorized distributor of Rongta in Bangladesh.</h2>
+            </transition>
+        </div>
+    </div>
+</template>
+
+<script>
+
+export default {
+    data() {
+        return {
+            showFaq: false
+        }
+    },
+
+    methods: {
+        toggleFaq() {
+            this.showFaq = !this.showFaq
+        }
+    }
+}
+
+</script>

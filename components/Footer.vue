@@ -129,7 +129,7 @@
                             <li class="text-sm text-gray-400 py-2">Driver Download</li>
                         </a>
 
-                        <NuxtLink to="/">
+                        <NuxtLink to="/faq">
                             <li class="text-sm text-gray-400 py-2">Faq</li>
                         </NuxtLink>
                     </ul>

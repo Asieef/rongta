@@ -23,7 +23,7 @@
                 <h2
                     class="font-semibold text-gray-700 py-4"
                     v-if="showFaq"
-                >Computer City Technologies Limited is the authorized distributor of Rongta in Bangladesh.</h2>
+                >- Computer City Technologies Limited is the authorized distributor of Rongta in Bangladesh.</h2>
             </transition>
         </div>
     </div>

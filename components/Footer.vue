@@ -28,21 +28,35 @@
                     </div>
 
                     <div class="col-span-4 lg:flex items-center">
-                        <div>
+                        <form method="post" @submit.prevent="sendMail">
                             <input
-                                type="text"
-                                value="Enter your email address"
-                                class="lg:w-80 w-64 h-12 px-4"
+                                v-model="honeyPot"
+                                type="checkbox"
+                                style="display:none"
+                                name="honeyPot"
+                                tabindex="-1"
+                                autocomplete="off"
                             />
-                        </div>
-                        <div class="lg:bg-white h-12 flex items-center justify-start">
-                            <div @click="openAlert">
-                                <NuxtLink
-                                    class="text-white bg-rongta px-8 py-2 lg:mr-2 uppercase text-sm hover:bg-rongtatext"
-                                    to
-                                >Submit</NuxtLink>
+
+                            <div class="flex">
+                                <div class>
+                                    <input
+                                        required
+                                        v-model="email"
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="bg-white border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    />
+                                </div>
+
+                                <div class="flex">
+                                    <button
+                                        class="text-white bg-rongta px-8 focus:outline-none hover:bg-gray-700 text-sm uppercase items-center font-semibold"
+                                    >Submit</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -51,9 +65,9 @@
 
             <div
                 id="alert-1"
-                class="flex p-4 mb-4 bg-blue-100 rounded-lg dark:bg-blue-200"
+                class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg dark:bg-blue-200"
                 role="alert"
-                v-if="showAlert"
+                v-if="showThanks"
             >
                 <svg
                     class="flex-shrink-0 w-5 h-5 text-blue-700 dark:text-blue-800"
@@ -71,7 +85,7 @@
                     class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800"
                 >Your Email Address has been submitted</div>
                 <button
-                    @click="openAlert"
+                    @click="toggleThanks"
                     type="button"
                     class="ml-auto -mx-1.5 -my-1.5 bg-blue-100 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex h-8 w-8 dark:bg-blue-200 dark:text-blue-600 dark:hover:bg-blue-300"
                     data-collapse-toggle="alert-1"
@@ -92,7 +106,6 @@
                     </svg>
                 </button>
             </div>
-
             <div class="border-t border-gray-600"></div>
 
             <!-- Links Section -->
@@ -172,18 +185,30 @@
         </div>
     </div>
 </template>
-
 <script>
+
 export default {
     data() {
         return {
-            showAlert: false
+            email: null,
+            honeyPot: false,
+            showThanks: false
         }
     },
 
     methods: {
-        openAlert() {
-            this.showAlert = !this.showAlert
+        sendMail() {
+            this.$axios.post('https://submit-form.com/eNqzBhtY', {
+                email: this.email,
+                _honeypot: this.honeyPot
+            }).then((response) => {
+                console.log(response.data);
+                this.showThanks = true;
+            });
+        },
+
+        toggleThanks() {
+            this.showThanks = !this.showThanks
         }
     }
 }

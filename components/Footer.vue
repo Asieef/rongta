@@ -22,9 +22,9 @@
                     <div
                         class="col-span-2 flex lg:justify-end items-center justify-center flex-wrap"
                     >
-                        <NuxtLink to="https://www.facebook.com/comcity.bd">
+                        <a href="https://www.facebook.com/comcity.bd">
                             <img src="/facebook.png" class="w-8" />
-                        </NuxtLink>
+                        </a>
                     </div>
 
                     <div class="col-span-4 lg:flex items-center">

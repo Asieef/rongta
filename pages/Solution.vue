@@ -85,7 +85,7 @@ export default {
                 content: 'With Rongta products, you will get different types of solution for your business. Rongta offers product lines which are fit for your logistics'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.png' }]
     }
 }
 

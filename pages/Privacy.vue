@@ -114,7 +114,7 @@ export default {
                 content: 'This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from rongta.com.bd'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.png' }]
     }
 }
 

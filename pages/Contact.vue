@@ -176,7 +176,7 @@ export default {
                 content: 'We are here to hear from you'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.png' }]
     },
 }
 

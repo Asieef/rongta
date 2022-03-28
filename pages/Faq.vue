@@ -55,7 +55,7 @@ export default {
                 content: 'Point of Sales Solution in Bangladesh'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.png' }]
     },
 }
 

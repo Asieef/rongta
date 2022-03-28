@@ -29,7 +29,7 @@ export default {
                 content: 'Rongta Technology (Xiamen) Group Co., Ltd. is a high-tech enterprise established in Jan 1st, 2009, specializing in R&D'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.png' }]
     }
 }
 

@@ -70,3 +70,23 @@
         </div>
     </div>
 </template>
+
+
+<script>
+export default {
+    head: {
+        title: 'Rongta Bangladesh | Solution',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                hid: 'description',
+                name: 'Rongta Solution',
+                content: 'With Rongta products, you will get different types of solution for your business. Rongta offers product lines which are fit for your logistics'
+            }
+        ],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
+}
+
+</script>

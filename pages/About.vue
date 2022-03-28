@@ -15,3 +15,22 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    head: {
+        title: 'Rongta Bangladesh | About Us',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                hid: 'description',
+                name: 'About Rongta',
+                content: 'Rongta Technology (Xiamen) Group Co., Ltd. is a high-tech enterprise established in Jan 1st, 2009, specializing in R&D'
+            }
+        ],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
+}
+
+</script>

@@ -42,7 +42,21 @@ export default {
         toggleFaq() {
             this.showFaq = !this.showFaq
         }
-    }
+    },
+
+    head: {
+        title: 'Rongta Bangladesh | FAQs',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                hid: 'description',
+                name: 'Frequently Asked Questions',
+                content: 'Point of Sales Solution in Bangladesh'
+            }
+        ],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    },
 }
 
 </script>

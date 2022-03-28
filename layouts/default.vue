@@ -30,5 +30,21 @@ export default {
             console.log(e);
         },
     },
-};
+
+    head: {
+        title: 'Rongta Bangladesh | Receipt & Thermal Printers',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                hid: 'description',
+                name: 'Rongta Bangladesh',
+                content: 'Point of Sales Solution in Bangladesh'
+            }
+        ],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    },
+
+
+}
 </script>

@@ -51,6 +51,7 @@ export default {
 
   sitemap: {
     hostname: 'https://rongta.com.bd',
+    gzip: true,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

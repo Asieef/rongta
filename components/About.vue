@@ -17,9 +17,10 @@
             marketing of pos printers, receipt printers, label scales, thermal
             transfer barcode printers, impact printers, printer mechanism,
             control boards and other POS peripherals.
-            <br />
-            <br />Computer City Technologies Ltd. is the authorized distributor
-            for Rongta in Bangladesh
+          </p>
+          <p class="text-rongtatext text-sm mt-8 mb-6">
+            Computer City Technologies Ltd. is the authorized distributor for
+            Rongta in Bangladesh
           </p>
 
           <NuxtLink
@@ -29,70 +30,7 @@
           >
         </div>
       </div>
-
-      <div class="col-span-1">
-        <div class="bg-rongta opacity-95 h-full grid grid-flow-row">
-          <div class="flex justify-end flex-col px-6">
-            <h2 class="text-white uppercase lg:text-3xl text-lg font-bold">
-              About Rongta
-            </h2>
-            <img src="/line.png" class="w-16" />
-          </div>
-          <div class="grid grid-cols-2 justify-items-center">
-            <div class="col-span-1 flex flex-col lg:gap-12 gap-6">
-              <div class="flex gap-2">
-                <div
-                  class="border border-white rounded flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16"
-                >
-                  <img src="/calendar.png" class="lg:w-12 w-8" />
-                </div>
-                <div class="uppercase text-white">
-                  <h2 class="font-bold lg:text-4xl text-lg">2009</h2>
-                  <p class="lg:text-sm text-xs py-2">established</p>
-                </div>
-              </div>
-
-              <div class="flex gap-2">
-                <div
-                  class="border border-white rounded flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16"
-                >
-                  <img src="/flag.png" class="lg:w-12 w-8" />
-                </div>
-                <div class="uppercase text-white">
-                  <h2 class="font-bold lg:text-4xl text-lg">5000+</h2>
-                  <p class="lg:text-sm text-xs py-2">Distributors</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-span-1 flex flex-col lg:gap-12 gap-6">
-              <div class="flex gap-2">
-                <div
-                  class="border border-white rounded flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16"
-                >
-                  <img src="/building.png" class="lg:w-12 w-8" />
-                </div>
-                <div class="uppercase text-white">
-                  <h2 class="font-bold lg:text-4xl text-lg">20000+</h2>
-                  <p class="lg:text-sm text-xs py-2">Area</p>
-                </div>
-              </div>
-
-              <div class="flex gap-2">
-                <div
-                  class="border border-white rounded flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16"
-                >
-                  <img src="/user.png" class="lg:w-12 w-8" />
-                </div>
-                <div class="uppercase text-white">
-                  <h2 class="font-bold lg:text-4xl text-lg">600+</h2>
-                  <p class="lg:text-sm text-xs py-2">Customers (Mil)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AboutBox />
     </div>
   </div>
 </template>

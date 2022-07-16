@@ -9,13 +9,15 @@
     </div>
 
     <div class="container mx-auto">
-      <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 p-16">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 p-6 md:p-16">
         <div class="col-span-1 border border-gray-200">
           <img :src="product.photo" :alt="product.name" style="width: 100%" />
         </div>
 
         <div class="col-span-1">
-          <h2 class="font-bold text-2xl text-rongtatext">{{ product.name }}</h2>
+          <h2 class="font-bold text-2xl text-rongtatext break-words">
+            {{ product.name }}
+          </h2>
           <p
             class="font-semibold text-rongtatext mt-6"
             v-html="product.short"
